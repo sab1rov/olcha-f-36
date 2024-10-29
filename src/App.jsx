@@ -1,13 +1,14 @@
-import { Footer, Header } from "./components"
+import Phones from "../../olcha/olcha/src/components/Phones";
+import { Footer, Header } from "./components";
 
 function App() {
-
   return (
     <>
-    <Header />
-    <Footer />
+      <Header />
+      <Footer />
+      <Phones />
     </>
-  )
+  );
 }
 
-export default App
+export default App;
