@@ -9,20 +9,29 @@ body{
     height: 100%;
 }
 #root{
-    font-family: sans-serif;
-}
-.cantainer{
-    max-width: 1280px;
-    margin: 0 auto;
-    padding:  0 20px ;
+
     width: 100%;
+    height: 100%;
+    font-family: sans-serif;
+    position: relative;
 }
- a{
+a{
     text-decoration: none;
     color: inherit;
- }
- button{
-    background-color: transparent;
+}
+button{
     cursor: pointer;
+    background-color: transparent;
     border: none;
- }
+}
+input{
+    background-color: transparent;
+    outline: none;
+    border: none;
+}
+.container{
+    max-width: 1440px;
+    margin: 0 auto;
+    width: 100%;
+    padding: 0 24px;
+}

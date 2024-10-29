@@ -1,0 +1,138 @@
+.footer {
+    &__wrap {
+      width: 100%;
+  
+      padding: 50px 0;
+      background-color: gainsboro;
+      height: 100%;
+    }
+    &__start {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      gap: 20px;
+      padding: 30px 0;
+      @media screen and (max-width: 800px) {
+        flex-direction: column-reverse;
+        gap: 20px;
+        justify-content: start;
+      }
+    }
+    &__text {
+      width: 50%;
+      @media screen and (max-width: 800px) {
+        width: 100%;
+      }
+      @media screen and (max-width: 465px) {
+        font-size: 20px;
+      }
+    }
+    &__left {
+      width: 50%;
+      @media screen and (max-width: 890px) {
+        width: 100%;
+      }
+    }
+    &__left-img {
+      width: 50%;
+      align-items: center;
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 15px;
+      padding: 30px 0;
+      @media screen and (max-width: 465px) {
+        grid-template-columns: repeat(1, 1fr);
+      }
+      img {
+        width: 150px;
+        height: 60px;
+      }
+    }
+    &_img {
+      width: 100%;
+    }
+    &__center {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 50px;
+      padding: 40px 0;
+      align-items: center;
+      justify-content: space-between;
+  
+      @media screen and (max-width: 1100px) {
+        grid-template-columns: repeat(3, 1fr);
+      }
+      @media screen and (max-width: 890px) {
+        grid-template-columns: repeat(2, 1fr);
+      }
+      @media screen and (max-width: 675px) {
+        grid-template-columns: repeat(1, 1fr);
+      }
+      a:hover{
+        opacity: 0.5;
+      }
+    }
+    &__olcha {
+      flex-direction: column;
+      display: flex;
+      gap: 10px;
+    }
+    &__olcha-text {
+      color: red;
+    }
+    &__olchauz {
+      :hover {
+        color: red;
+      }
+    }
+    &__infarmatsiya {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+    &__infarmatsiya-text {
+      color: red;
+    }
+  
+    &__title {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+    &__center-carts {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      align-items: center;
+      gap: 10px;
+      @media screen and (max-width: 480px) {
+        grid-template-columns: repeat(1, 1fr);
+        gap: 20px;
+      }
+      img {
+        width: 150px;
+      }
+    }
+    &__end {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      align-items: center;
+      margin-top: 40px;
+      justify-content: space-between;
+      @media screen and (max-width: 1000px) {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 30px;
+      }
+      @media screen and (max-width: 580px) {
+          grid-template-columns: repeat(1, 1fr);
+         
+        }
+      a:hover {
+        color: red;
+        opacity: 1;
+      }
+      img{
+          width: 80%;
+      }
+    }
+  }
+  
