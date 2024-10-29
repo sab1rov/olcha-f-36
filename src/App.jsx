@@ -1,4 +1,3 @@
-
 import { useState } from "react"
 import { Bottomactions, Footer, Header } from "./components"
 import PhoneCards from "./components/Main/PhoneCards/PhoneCards";
