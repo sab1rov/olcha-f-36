@@ -1,3 +1,4 @@
+
 import { useState } from "react"
 import { Bottomactions, Footer, Header } from "./components"
 import PhoneCards from "./components/Main/PhoneCards/PhoneCards";
@@ -22,12 +23,12 @@ function App() {
       <div className="swiper__wrap">
         <BannerSwiper/>          
       </div>
-        <Card/>
+      <Card/>
+      <Phones />
     </main>
     <Footer />
     </div>
   )
-
 }
 
 export default App;
