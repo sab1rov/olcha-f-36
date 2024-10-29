@@ -2,8 +2,6 @@ import React from "react";
 import MenuLeft from "./MenuLeft";
 import MenuRight from "./MenuRight";
 
-
-
 function HeaderTop({open, setOpen}) {
 
     const toggleMenu = () => {

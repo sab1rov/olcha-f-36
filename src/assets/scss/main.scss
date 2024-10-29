@@ -1,3 +1,4 @@
+
 @import "./components/variables";
 @import "./components/normalize";
 @import "./components/mixins";
@@ -7,3 +8,9 @@
 @import "./sections/menu";
 @import "./sections/phonecards";
 @import "./sections/product";
+@import "./section/Banner.scss";
+@import "./section/Card.scss";
+@import "./section/Left.scss";
+@import "./section/Swiper.scss";
+@import "./section/Tovar.scss";
+@import "./section/Right.scss"
