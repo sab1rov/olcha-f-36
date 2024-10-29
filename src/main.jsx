@@ -1,12 +1,6 @@
-import ReactDom from 'react-dom/client'
-import App from './App'
-import './assets/scss/main.scss'
-import "swiper/css";
+import React from "react";
+import ReactDOM from "react-dom/client";
+import App from "./App.jsx";
+import "./assets/scss/main.scss"
 
-ReactDom.createRoot(document.querySelector('.wrapper')).render(
-    <App/>
-)
-
-
-
-    
+ReactDOM.createRoot(document.getElementById("root")).render(<App />);
