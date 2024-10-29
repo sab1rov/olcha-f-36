@@ -1,5 +1,5 @@
 import { useState } from "react"
-import { Bottomactions, Footer, Header } from "./components"
+import { Bottomactions, Footer, Header, Brent } from "./components"
 import PhoneCards from "./components/Main/PhoneCards/PhoneCards";
 import Product from "./components/Main/Product/Product";
 import Banner from "./components/main/Banner"
@@ -24,6 +24,8 @@ function App() {
       </div>
       <Card/>
       <Phones />
+    <Brent/>
+      
     </main>
     <Footer />
     </div>
