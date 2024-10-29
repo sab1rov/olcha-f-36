@@ -1,7 +1,8 @@
 import React from "react";
 
 function HeaderBottom() {
-  return <div>HeaderBottom</div>;
+  return <div><>
+  </></div>;
 }
 
 export default HeaderBottom;

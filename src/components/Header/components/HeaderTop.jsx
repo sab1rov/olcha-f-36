@@ -1,7 +1,9 @@
 import React from "react";
 
 function HeaderTop() {
-  return <div>HeaderTop</div>;
+  return <div>
+    <></>
+  </div>;
 }
 
 export default HeaderTop;

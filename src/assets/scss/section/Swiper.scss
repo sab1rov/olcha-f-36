@@ -1,0 +1,36 @@
+// #app {
+//     height: 100%;
+//   }
+  html,
+  body {
+    position: relative;
+    // height: 100%;
+  }
+  
+  
+.Wrap{
+  display: flex;
+  height: 400px;
+  gap: 20px;
+  width: 100%;
+  @media screen and (max-width:912px) {
+    display: block;
+  }
+  // background-color: black;
+  }
+
+  .swiper__right{
+    // background-color: greenyellow;
+    width: 80%;
+    height: 100%;
+    @media screen and (max-width:912px) {
+      width: 100%;
+       }
+  }
+
+  .swiper__left{
+    // background-color: red;
+    width: 20%;
+    height: 100%;
+  }
+ 
