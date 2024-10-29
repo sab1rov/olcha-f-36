@@ -1,4 +1,4 @@
-import { Footer, Header } from "./components"
+import { Brent, Footer, Header } from "./components"
 
 function App() {
 
@@ -6,6 +6,7 @@ function App() {
     <>
     <Header />
     <Footer />
+    <Brent/>
     </>
   )
 }
