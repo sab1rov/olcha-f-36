@@ -8,7 +8,7 @@ function HeaderTop({ open, setOpen }) {
   };
 
   return (
-    <div>
+    <>
       <div className="header__centr">
         <div className="header__bac">
           <div className="container">
@@ -126,7 +126,7 @@ function HeaderTop({ open, setOpen }) {
           </div>
         </div>
       </div>
-    </div>
+    </>
   );
 }
 
