@@ -1,54 +1,54 @@
-.bottom{
-    display: none;
-    @media screen and (max-width:895px) {
-        display: block;
+.bottom {
+  display: none;
+  @media screen and (max-width: 895px) {
+    display: block;
+  }
+  &__wrap {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    padding: 8px 10px;
+    background-color: $white-color;
+    bottom: 0;
+    box-shadow: 0 -4px 8px #0000000f;
+    display: flex;
+    flex: 1;
+    height: 68px;
+    justify-content: space-between;
+    left: 0;
+    padding: 8px 10px;
+    position: fixed;
+    width: 100%;
+    z-index: 50;
+    @media screen and (max-width: 430px) {
+      padding: 8px 10px;
     }
-    &__wrap{
-        position: fixed;
-        bottom: 0;
-        width: 100%;
-        padding: 8px 10px;
-        background-color: #fff;
-        bottom: 0;
-        box-shadow: 0 -4px 8px #0000000f;
-        display: flex;
-        flex: 1;
-        height: 68px;
-        justify-content: space-between;
-        left: 0;
-        padding: 8px 10px;
-        position: fixed;
-        width: 100%;
-        z-index: 50;
-        @media screen and (max-width:430px) {
-            padding: 8px 10px;
-        }
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  &__nav-links {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 24px;
+    width: 100%;
+    @media screen and (max-width: 440px) {
+      padding: 8px 10px;
+      gap: 8px;
     }
-    &__nav-links{
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        gap: 24px;
-        width: 100%;
-        @media screen and (max-width:440px) {
-            padding: 8px 10px;
-            gap: 8px;
-        }
+  }
+  &__link {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 5px;
+    opacity: 0.5;
+    width: 100%;
+
+    &:hover {
+      color: $main-color;
+      opacity: 1;
     }
-    &__link{
-        display: flex;
-        align-items: center;
-        flex-direction: column;
-        gap: 5px;
-        opacity: 0.5;
-        width: 100%;
-       
-        &:hover{
-            color: $pri;
-            opacity: 1;
-        }
-    }
+  }
 }

@@ -1,4 +1,3 @@
-
 @import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap");
 
 .payment {
@@ -171,11 +170,10 @@
 @import "./sections/menu";
 @import "./sections/phonecards";
 @import "./sections/product";
-@import "./section/Banner.scss";
-@import "./section/Card.scss";
-@import "./section/Left.scss";
-@import "./section/Swiper.scss";
-@import "./section/Tovar.scss";
-@import "./section/Right.scss"
-@import "./section/footer.scss";
-@import "./section/brentComponent";
+@import "./sections/card";
+@import "./sections/left";
+@import "./sections/swiper";
+@import "./sections/tovar";
+@import "./sections/right";
+@import "./sections/footer";
+@import "./sections/brentComponent";
