@@ -1,0 +1,80 @@
+.login-page{
+    
+    &__wraps{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    &__wrap{
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); 
+        transition: box-shadow 0.3s ease;
+        width: 350px;
+        height: auto;
+        border: 2px solid $white-color;
+        border-radius: 10px;
+        padding: 20px 20px;
+        background: $white-color;
+    }
+
+    &__row{
+      display: flex;
+      margin-bottom: 14px;
+    }
+
+    &__title{
+        font-size: 24px;
+        font-weight: 400;
+        color: $black-color;
+    }
+    &__subtitle{
+        font-size: 16px;
+        font-weight: 400;
+        color: $black-color;
+        margin-bottom: 4px;
+        opacity: 0.5;
+    }
+    &__form{
+        cursor: pointer;
+        margin-bottom: 20px;
+    }
+    &__select{
+        cursor: pointer;
+        border-radius: 10px 0 0 10px;
+        border: 2px solid $black-color;
+        background-repeat: no-repeat;
+        width: 23%;
+        padding: 5px;
+    }
+    #phone{
+        cursor: pointer;
+        border-radius: 0 10px 10px 0;
+        border: 2px solid $black-color;
+        width: 45%;
+        padding: 5.3px;
+    }
+    #lname{
+        cursor: pointer;
+        border-radius: 10px;
+        border: 2px solid $black-color;
+        width: 68%;
+        padding: 5px;
+        margin-bottom: 30px;
+    }
+
+    &__button{
+        border: 1px solid $main-color;
+        border-radius: 8px;
+        padding: 8px 68px;
+        color: $white-color;
+        background: $button-color;
+        cursor: pointer;
+        transition: all 0.2s ease-in;
+        &:hover{
+            color: $main-color;
+            background:$white-color ;
+        }
+    }
+
+
+}
