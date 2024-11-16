@@ -1,6 +1,7 @@
 import React from "react";
 import MenuLeft from "./MenuLeft";
 import MenuRight from "./MenuRight";
+import { Link } from "react-router-dom";
 
 function HeaderTop({ open, setOpen }) {
   const toggleMenu = () => {
@@ -57,11 +58,13 @@ function HeaderTop({ open, setOpen }) {
         <div className="container">
           <div className="header__bootm-inner">
             <div className="header__bootm-imgs">
+              <Link to={"/"}>
               <img
                 src="/public/bootm.png"
                 alt="bootm"
                 className="header__bootm-png"
               />
+              </Link>
               <div className="header__katalog">
                 <button className="header__bootm-btn" onClick={toggleMenu}>
                   {/* <span className="fa fa-bars  header__bootm-btn-menu" ></span> 
@@ -92,29 +95,29 @@ function HeaderTop({ open, setOpen }) {
             </div>
             <div className="header__rights">
               <div className="header__icons">
-                <a href="#" className="header__icons-link">
+                <Link to={"/comparisonPage"} className="header__icons-link">
                   <span className="fa fa-bar-chart"></span>
                   <small className="header__smal">Taqqoslash</small>
-                </a>
+                </Link>
               </div>
 
               <div className="header__icons">
-                <a href="#" className="header__icons-link">
+                <Link to={`/likedPage`} href="#" className="header__icons-link">
                   <span className="	fa fa-heart-o"></span>
-                  <small className="header__smal">Sevgi</small>
-                </a>
+                  <small className="header__smal">Sevimlilar</small>
+                </Link>
               </div>
               <div className="header__icons">
-                <a href="#" className="header__icons-link">
+                <Link to={`/basketPage`} className="header__icons-link">
                   <span className="	fa fa-shopping-cart"></span>
-                  <small className="header__smal">Savat</small>
-                </a>
+                  <small className="header__smal">Savatcha</small>
+                </Link>
               </div>
               <div className="header__icons">
-                <a href="#" className="header__icons-link">
+                <Link to={`/login`} className="header__icons-link">
                   <span className="fa fa-user-o"></span>
                   <small className="header__smal">Kirish</small>
-                </a>
+                </Link>
               </div>
             </div>
           </div>

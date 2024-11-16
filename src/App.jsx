@@ -1,9 +1,9 @@
 import { useState } from "react";
-import { Bottomactions, Footer, Header, Brent } from "./components";
-import PhoneCards from "./components/Main/PhoneCards/PhoneCards";
-import Product from "./components/Main/Product/Product";
-import Card from "./components/main/Card";
-import BannerSwiper from "./components/main/BannerSlider";
+import { Footer, Header, Login} from "./components";
+import HomePage from "./pages/HomePage";
+import { Route, Routes } from "react-router-dom";
+import ComparisonPage from "./pages/ComparisonPage";
+import { routes } from "./constants/routes";
 
 function App() {
   const [open, setOpen] = useState(false);
@@ -12,13 +12,14 @@ function App() {
     <div className={`root ${open ? "open" : ""}`}>
       <Header open={open} setOpen={setOpen} />
       <main className="main">
-        <PhoneCards />
-        <Product />
-        <Bottomactions />
-        {/* <BannerSwiper /> */}
-        <Card />
-        {/* <Phones /> */}
-        <Brent />
+         <Routes>
+       {
+        routes.map(item => (
+          <Route path={item.path} element={item.element} key={item.id}/>
+        )) }
+         <Route path="/login" element={<Login />} />
+         </Routes>
+        
       </main>
       <Footer />
     </div>

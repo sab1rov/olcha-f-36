@@ -1,18 +1,35 @@
+import React from "react";
+import { useEffect, useState } from "react";
 import CompareIcon from "../../../assets/icons/CompareIcon";
 import LikeButtonIcon from "../../../assets/icons/LikeButtonIcon";
 import ShopCartIcon from "../../../assets/icons/ShopCartIcon";
-import { PhoneCard } from "../../../constants/data";
+import { API } from "../../../api";
+import { urls } from "../../../constants/urls";
+
 
 function PhoneCards() {
+   const [products, setProducts] = useState([]);
+
+   const getProducts = async () => {
+    const { data } = await API.get(urls.products.get);
+    setProducts(data);
+    
+   };
+
+   useEffect(() => {
+    getProducts();
+   },[])
+  
+
   return (
     <section className="phonecard">
       <div className="container">
         <div className="phonecard__wrap">
           <div className="phonecard__top">
-              {PhoneCard.map((items) => (
-                <div className="phonecard__sale" key={items.id}>
+              {products.map((item) => (
+                <div className="phonecard__sale" key={item.id}>
                   <div className="phonecard__img">
-                    <img src={items.image} alt="img" />
+                    <img src={item.image} alt="product image" />
                     <div className="phonecard__buttons">
                       <button>
                         <LikeButtonIcon />
@@ -23,10 +40,10 @@ function PhoneCards() {
                     </div>
                   </div>
                   <div className="phonecard__content">
-                    <p className="content__title">{items.title}</p>
+                    <p className="content__title">{item.name}</p>
                     <div className="money">
-                      <span className="first-child">{items.firstChild}</span>
-                      <span className="other">{items.other}</span>
+                      <span className="first-child">{item.price}</span>
+                      <span className="other">{item.price} x 12 oy som</span>
                     </div>
                     <div className="phonecard__button">
                       <button className="shopcart">

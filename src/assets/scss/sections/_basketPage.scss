@@ -1,0 +1,52 @@
+.basket-page{
+    padding: 20px 0;
+    &__cart{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        margin: 0 auto;
+        max-width: 400px;
+        width: 100%;
+        padding-bottom: 120px;
+        
+    }
+    &__img{
+     max-width: 100%;
+     min-height: 100%
+    }
+    &__title{
+    color:$page-color;
+    font-size: 36px;
+    font-weight: 600;
+    line-height: 49px;
+    margin-bottom: 16px;
+    text-align: center;
+    }
+    &__subtitle{
+     color: $page-color;
+     font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+    margin-bottom: 24px;
+    text-align: center;
+    }
+    &__button{
+        display: inline-flex;
+        justify-content: center;
+        align-items: center;
+        padding: 10px 17px;
+        border: 2px solid $main-color;
+        border-radius: 12px;
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 24px;
+        color: $white-color;
+        background-color: $button-color;
+       transition: all 0.3s ease-in-out;
+       &:hover{
+        color: $button-color;
+        background: #eb15370d;
+       }
+    }
+}
